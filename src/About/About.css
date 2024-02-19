@@ -1,0 +1,110 @@
+.About-container {
+  padding: 100px 50px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  gap: 20px;
+  max-width: 100vw;
+  
+}
+
+
+
+.Description{
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  border-bottom: 1px solid grey;
+  padding-bottom: 10px;
+  
+}
+.About-container h1{
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--secondarycolor);
+ 
+  }
+  .eductionh1{
+    margin-left: -160px;
+   }
+  .About-container sub{
+   background-color: rgba(255, 166, 0, 0.343);
+   border-radius: 5px;
+  }
+  .About-container span{
+    font-size: 19px;
+    font-weight: 200;
+    color: var(--secondarycolor);
+    line-height: 1.5;
+    text-transform: capitalize;
+    text-align: justify;
+  }
+  .card {
+    width: 220px;
+    height: 280px;
+    background: linear-gradient(180deg, #fdc50f98 26.71%, #fb98f390 110.36%);
+    border-radius: 10px;
+    transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-align: center;
+    padding: 5px;
+    transition: all .3s
+   }
+   
+   .shadow {
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+                0 0  0 2px rgb(190, 190, 190),
+                0.3em 0.3em 1em rgba(0,0,0,0.3);
+   }
+   .card:hover{
+    transform: scale(1.02);
+   }
+   .Education{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 1;
+    gap: 60px;
+    height: 100%;
+    }
+    .card img{
+      border-radius: 100%;
+    }
+    
+   .Education h2{
+    color: var(--primarycolor);
+    line-height: 1;
+   }
+   .Education span{
+     color:var(--secondarycolor);
+     font-size: .8rem;
+
+   }
+   
+  @media (max-width: 520px) {
+    .About-container{
+      align-items: center;
+      height: 100%;
+      width:100%;
+      overflow-x: hidden;
+     }
+     .card {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      justify-content: center;
+      align-items: center; 
+    }
+     .Education{
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 200;
+      line-height: .9;
+      gap: 30px;
+      justify-content: center;
+
+      }
+  }

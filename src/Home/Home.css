@@ -1,0 +1,126 @@
+.active {
+  color: orange;
+  border-bottom: 2px solid orange;
+  padding-bottom: 3px;
+}
+
+.Home-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 100%;
+  gap: 10px;
+  max-width: 100vw;
+  color: var(--secondarycolor);
+  padding: 100px 50px;
+  overflow: hidden; 
+}
+
+.left-intro {
+  display: flex;
+  flex-direction: column;
+  flex: 1.5;
+  gap: 10px;
+  justify-content: center;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+
+.left-intro > :nth-child(1){
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--secondarycolor);
+}
+.left-intro > :nth-child(2) {
+  font-size: 4rem;
+  font-weight: 500;
+  color: orange;
+}
+.left-intro > :nth-child(3) {
+  font-size: 19px;
+  font-weight: 200;
+  color: var(--secondarycolor);
+  line-height: 1.5;
+  text-transform: capitalize;
+  text-align: justify;
+}
+
+.left-intro button {
+  width: 200px;
+  margin-left: -2px;
+  margin-top: 20px;
+}
+
+.left-intro > ul {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.left-intro > ul > li > a {
+  transition: linear 0.2s;
+}
+
+.left-intro > ul > li > a:hover {
+  display: flex;
+  gap: 20px;
+  transform: scale(1.1);
+}
+
+.left-intro img {
+  height: 60px;
+  
+}
+
+.right-intro {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.right-intro > img {
+  height: 500px;
+  width: 550px; 
+  filter: drop-shadow(100px -100px 700px orange);
+ 
+  border-radius: 60px;
+
+}
+
+@media (max-width: 520px) {
+  .Home-container {
+    flex-direction: column;
+    gap: 80px;
+    width: 100vw;
+    height: 100%;
+  }
+ 
+  .left-intro {
+    flex: 2;
+    gap: 5px;
+    line-height: 1;
+  }
+  .left-intro > :nth-child(1){
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  .left-intro > :nth-child(2) {
+    font-size: 3rem;
+    font-weight: 500;
+    
+  }
+  .left-intro button {
+    width: 50%;
+  }
+  .right-intro > img {
+    height: 500px;
+    width: 460px; 
+    filter: drop-shadow(10px 10px 100px rgba(255, 166, 0, 0.567));
+    border-radius: 60px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  }
+}
