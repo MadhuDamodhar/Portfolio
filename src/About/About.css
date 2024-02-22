@@ -25,7 +25,7 @@
  
   }
   .eductionh1{
-    margin-left: -160px;
+    margin-left: 0px;
    }
   .About-container sub{
    background-color: rgba(255, 166, 0, 0.343);
@@ -64,7 +64,7 @@
     justify-content: center;
     font-size: 12px;
     font-weight: 200;
-    line-height: 1;
+   
     gap: 60px;
     height: 100%;
     }
@@ -82,12 +82,63 @@
 
    }
    
+  @media (max-width: 1100px) {
+    .About-container{
+      align-items: center;
+      height: 100%;
+      width:100%;
+      overflow-x: hidden;
+     }
+     .card {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      justify-content: center;
+      align-items: center; 
+    }
+     .Education{
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 200;
+      line-height: .9;
+      gap: 30px;
+      justify-content: center;
+
+      }
+      .eductionh1{
+        margin-left: -860px;
+       }
+       .Education span{
+        color:var(--secondarycolor);
+        font-size: .7rem;
+       font-weight: 300px;
+      }
+      .eductionh1{
+        margin-left: -760px;
+       }
+  }
+ 
+  @media (max-width: 700px) {
+    .eductionh1{
+      margin-left: -460px;
+     }
+  }
+  @media (max-width: 700px) {
+    .eductionh1{
+      margin-left: -320px;
+     }
+  }
   @media (max-width: 520px) {
     .About-container{
       align-items: center;
       height: 100%;
       width:100%;
       overflow-x: hidden;
+     }
+     .eductionh1{
+      margin-left: -160px;
      }
      .card {
       display: flex;

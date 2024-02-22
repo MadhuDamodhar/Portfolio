@@ -27,7 +27,7 @@ function About() {
      <img src={mca}></img>
      <h2>Master's<br/>Master of Computer Application 
      </h2>
-     <span> University PG college Osmania secunderabad<br/>
+     <span>UniversityPG college Osmania secunderabad<br/>
      (expected completion date 2025 ) 
      </span>
      </div>

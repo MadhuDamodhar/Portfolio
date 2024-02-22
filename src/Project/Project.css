@@ -6,7 +6,7 @@
   min-height:100%;
   max-width: 100vw;
   color: var(--secondarycolor);
-  align-items: center;
+ 
   text-align: justify;
   
   }
@@ -37,13 +37,15 @@
   box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
                 0 0  0 2px rgb(190, 190, 190),
                 0.3em 0.3em 1em rgba(0,0,0,0.3);
+                margin-left: -00px;
 }
 .project-card img{
   background-color: var(--secondarycolor);
   border-radius:100% ;
 }
 .project-card2{
-  margin-left: 100px;
+  margin-left: 410px;
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -74,8 +76,113 @@ color: var(--primarycolor);
 .project-card2:hover{
   transform:scale(1.02);  
 }
+@media (max-width: 1200px) {
+  .projects{
+    padding:100px 40px ;
+  }
+ 
+  .project-card h2{
+    font-size: 1.4rem;
+    color: var(--primarycolor);
+  }
+  .project-card2{
+    margin-left: 340px;
+  }
 
-@media (max-width: 520px) {
+  
+}
+@media (max-width: 1100px) {
+  .projects{
+    padding:100px 40px ;
+  }
+ 
+  .project-card h2{
+    font-size: 1.4rem;
+    color: var(--primarycolor);
+  }
+  .project-card2{
+    margin-left: 300px;
+  }
+
+  
+}
+@media (max-width: 900px) {
+  .projects{
+    padding:100px 20px ;
+
+  }
+ 
+  .project-card h2{
+    font-size: 1.2rem;
+    color: var(--primarycolor);
+  }
+  .project-card2{
+    margin-left: 230px;
+    gap: 3px;
+    padding: 5px 15px;
+    font-size: 1.4rem;
+  }
+  .project-card2 h2{
+    font-size: 1.3rem;
+    color: var(--primarycolor);
+    }
+    .project-card{
+      font-size: 1.2rem;
+    }
+  
+}
+@media (max-width: 700px) {
+  .projects{
+    padding:100px 20px ;
+  
+  }
+ 
+  .project-card h2{
+    font-size: 1.4rem;
+    color: var(--primarycolor);
+  }
+  .project-card2{
+    margin-left: 200px;
+    gap: 10px;
+    padding: 5px 25px;
+    font-weight: 400;
+    font-size: 1.1rem;
+  
+  }
+  .project-card2 h2{
+    font-size: 1.1rem;
+    color: var(--primarycolor);
+    }
+  
+}
+@media (max-width: 600px) {
+  .projects{
+    padding:100px 20px ;
+   align-items: center;
+  }
+ 
+  .project-card h2{
+    font-size: 1.2rem;
+    color: var(--primarycolor);
+  }
+  .project-card2{
+    margin-left: 0px;
+    gap: 10px;
+    padding: 5px 25px;
+    font-weight: 200;
+    font-size: 1rem;
+   height: 160px;
+  }
+  .project-card2 h2{
+    font-size: 1.1rem;
+    color: var(--primarycolor);
+    }
+    .project-card2>img{
+      height: 60px;
+    }
+  
+}
+@media (max-width: 600px) {
   .projects{
     
     padding:60px 0px ;

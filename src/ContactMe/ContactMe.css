@@ -3,7 +3,7 @@
   display: flex;
    align-items: center;
    flex-direction: column;
-   justify-content: center;
+   justify-content: space-between;
    
    max-width: 100vw;
 }
@@ -32,6 +32,7 @@
   background: linear-gradient(180deg, #fdc50f98 26.71%, #fb98f390 110.36%);
   box-shadow: 3px 3px 5px #696867b9,
              -3px -3px 5px #68686497;
+             margin-top: 150px;
 }
 
 input{
@@ -54,6 +55,7 @@ input{
   border: 3px solid rgb(152, 148, 148);
   font-size: 1rem;
   font-weight: 200;
+  
  }
  .send{
   display: flex;
@@ -152,4 +154,56 @@ input{
       object-fit: cover;
       height: .8rem;
     }
+}
+@media(max-width:1200px){
+  .form{
+    margin-top: 70px;
+  }
+  .contact h1{
+    font-size: 1.8rem;
+    font-weight: 300;
+     width: 100%;
+     text-align: center;
+     border-radius: 10px;
+     color: var(--secondarycolor);
+     margin-top: 20px;
+  }
+}
+@media(max-width:1160px){
+  .contact h1{
+    font-size: 1.8rem;
+    font-weight: 300;
+     width: 100%;
+     text-align: center;
+     border-radius: 10px;
+     color: var(--secondarycolor);
+     margin-top: 20px;
+  }
+}
+@media(max-width:1160px){
+  form h3{
+    font-size: .8rem;
+  }
+}@media(max-width:700px){
+  form h3{
+    font-size: .6rem;
+  }
+}@media(max-width:600px){
+  .form h3{
+    font-size: .4rem;
+  }
+  .form{
+    width: 60%;
+  }
+}@media(max-width:600px){
+  .form h3{
+    font-size: .4rem;
+  }
+  .form{
+    width: 80%;
+    margin-top: -30px;
+  }
+  .footer{
+    margin-bottom: -160px;
+  }
 }

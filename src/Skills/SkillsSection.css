@@ -52,10 +52,47 @@
   margin-top: 5px;
   padding-bottom: 5px;
 }
-@media (max-width: 520px) {
+@media (max-width: 720px) {
+  .skills-section {
+    flex-direction: row;
+    gap: 30px;
+  
+  }
+  
+.skills-section h2{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--secondarycolor);
+  
+}
+.skill-name {
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+}
+@media (max-width: 720px) {
+  .skills-section {
+    flex-direction: row;
+    gap: 30px;
+  
+  }
+  
+.skills-section h2{
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--secondarycolor);
+  
+}
+.skill-name {
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+}
+@media (max-width: 550px) {
   .skills-section {
     flex-direction: column;
-    gap: 30px;
+    gap: 70px;
     max-width: 100vw;
     min-height: 100vh;
   }

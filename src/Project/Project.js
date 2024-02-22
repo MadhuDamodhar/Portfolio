@@ -8,7 +8,7 @@ function Project() {
   return (
     <div data-aos="fade-in"
      className='projects'>
-     <h1  data-aos="fade-in">Projects</h1>
+     <h1  data-aos="fade-in">Projects</h1> 
    <div data-aos="fade-right" className='project-card'>
    <div className='project-description'>
    <h2>Maintaing Our College Website:</h2>
