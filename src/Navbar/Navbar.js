@@ -56,7 +56,7 @@ function Navbar() {
                 smooth={true}
                 to="About-container"
                 spy={true}
-                offset={-10}
+                offset={-60}
                 duration={300}
                 className="navitem"
               >
@@ -69,7 +69,7 @@ function Navbar() {
                 smooth={true}
                 to="skills-section"
                 spy={true}
-                offset={-10}
+                offset={-60}
                 duration={300}
                 className="navitem"
               >
