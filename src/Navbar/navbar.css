@@ -16,7 +16,7 @@ body {
   --grey: #93a1a1;
   position: absolute;
   height: 300px;
-  width: 15%;
+  width: 20%;
   margin-top: 400px;
   padding: 9px;
   background-color: var(--bg);
@@ -50,12 +50,13 @@ z-index: -1;
   justify-content: space-between;
   padding: 20px;
   height: 10vh;
-  min-width: 100vw;
+  width: 100%;
   position: fixed;
   background-color: var(--primarycolor);
   box-shadow: 2px 2px 3px rgba(128, 128, 128, 0.201);
   z-index: 1;
   color: var(--secondarycolor);
+  top:0;
 }
 
 .nav-left {
@@ -113,6 +114,7 @@ z-index: -1;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   
 }
 label{
@@ -125,6 +127,7 @@ label{
   border-radius: 200px;
   display: block;
   transition: .3s;
+  cursor: pointer;
 }
 label::after{
   content: "";
@@ -185,10 +188,20 @@ label svg.sun{
   display: flex;
   gap: 50px;
   padding: 5px;
-}
 
+}
+.nav-right > ul > li>a{
+border-bottom: 3px solid transparent ;
+transition: all .2s;
+border-radius: 3px;
+cursor: pointer;
+}
 .nav-right > ul > li > a:hover {
   color: orange;
+  padding-bottom: 4px;
+  border-radius: 2px;
+  border-bottom-width: 100%;
+border-bottom: 3px solid orange ;
 }
 
 
@@ -289,7 +302,10 @@ label svg.sun{
 }
 @media only screen and (max-width: 520px){
   .card1{
-    margin-top: 30px;
+    margin-top: 35px;
+    margin-left: 10px;
+    width: 90%;
+
   }
   .toggle{
     margin-top: -10px;

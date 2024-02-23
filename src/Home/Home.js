@@ -18,7 +18,7 @@ function Home() {
   return (
     <div className="Home-container">
       <div data-aos="fade-right" data-aos-once="false"  className="left-intro">
-        <span>Hy, I'm</span>
+        <span>Hi, I'm</span>
         <span>Madhu Damodhar !
         </span>
         <span>

@@ -1,5 +1,5 @@
 .About-container {
-  padding: 100px 50px;
+  padding: 50px 50px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -24,7 +24,7 @@
   color: var(--secondarycolor);
  
   }
-  .eductionh1{
+  .educationh1{
     margin-left: 0px;
    }
   .About-container sub{
@@ -107,7 +107,7 @@
       justify-content: center;
 
       }
-      .eductionh1{
+      .educationh1{
         margin-left: -860px;
        }
        .Education span{

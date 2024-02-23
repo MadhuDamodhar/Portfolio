@@ -5,13 +5,14 @@
   border-radius: 2px;
 } */
 
+
 .Home-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   min-height: 100vh;
   gap: 10px;
-  min-width: 100vw;
+  max-width: 100vw;
   color: var(--secondarycolor);
   padding: 140px 50px;
   overflow: hidden; 
@@ -224,11 +225,11 @@ body::-webkit-scrollbar{
     gap: 50px;
     width: 100vw;
     height: 100%;
-    padding-top: 100px,10px;
+    padding-top: 100px 10px;
   }
   .left-intro > ul {
     display: flex;
-    gap: 50px;
+    gap: 20px;
    
   }
   .left-intro {

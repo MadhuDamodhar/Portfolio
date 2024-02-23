@@ -28,15 +28,15 @@ function Navbar() {
   }, [menuIsClicked]);
 
   return (
-    <div className="Navbar-container">
+    <div data-aos="fade-down" className="Navbar-container">
       <div className="nav-left">
         <div type="checkbox" id="hamBureger" class="hamBurger">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
       
-        <div data-aos="fade-right" id="card1" className="card1">
-          <ul>
+        <div  id="card1" className="card1">
+          <ul data-aos="fade-down">
             <li>
               <Link
                 activeClass="active"
@@ -44,7 +44,7 @@ function Navbar() {
                 to="Home-container"
                 spy={true}
                 offset={-110}
-                duration={600}
+                duration={300}
                 className="navitem"
               >
                 Home
@@ -57,7 +57,7 @@ function Navbar() {
                 to="About-container"
                 spy={true}
                 offset={-10}
-                duration={600}
+                duration={300}
                 className="navitem"
               >
                 About Me
@@ -69,8 +69,8 @@ function Navbar() {
                 smooth={true}
                 to="skills-section"
                 spy={true}
-                offset={5}
-                duration={600}
+                offset={-10}
+                duration={300}
                 className="navitem"
               >
                 Skills
@@ -82,8 +82,8 @@ function Navbar() {
                 smooth={true}
                 to="projects"
                 spy={true}
-                offset={25}
-                duration={600}
+                offset={-100}
+                duration={300}
                 className="navitem"
               >
                 Projects
@@ -95,8 +95,8 @@ function Navbar() {
                 smooth={true}
                 to="contact"
                 spy={true}
-                offset={50}
-                duration={600}
+                offset={40}
+                duration={300}
                 className="navitem"
               >
                 Contact Me
@@ -286,7 +286,7 @@ function Navbar() {
               smooth={true}
               to="About-container"
               spy={true}
-              offset={-10}
+              offset={-50}
               duration={600}
               className="navitem"
             >
@@ -299,7 +299,7 @@ function Navbar() {
               smooth={true}
               to="skills-section"
               spy={true}
-              offset={0}
+              offset={-20}
               duration={600}
               className="navitem"
             >
@@ -312,7 +312,7 @@ function Navbar() {
               smooth={true}
               to="projects"
               spy={true}
-              offset={25}
+              offset={-50}
               duration={600}
               className="navitem"
             >
@@ -325,7 +325,7 @@ function Navbar() {
               smooth={true}
               to="contact"
               spy={true}
-              offset={48}
+              offset={78}
               duration={600}
               className="navitem"
             >

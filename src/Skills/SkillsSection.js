@@ -21,18 +21,18 @@ const SkillsSection = () => {
     <div className="skills-section">
     <div data-aos="fade-up" className='frontend'>
       <h2>Frontend Skills<sub>Basic 😁</sub></h2>
-      <SkillBar skill="React Js" level={50} />
-      <SkillBar skill="HTML" level={90} />
-      <SkillBar skill="CSS" level={75} />
-      <SkillBar skill="JavaScript" level={60} />
+      <SkillBar skill="React Js" level={100} />
+      <SkillBar skill="HTML" level={100} />
+      <SkillBar skill="CSS" level={100} />
+      <SkillBar skill="JavaScript" level={100} />
   
       </div>
       <div data-aos="fade-up" className='backend'>
       <h2>Backend Skills<sub>Basic 😁</sub></h2><br/>
-      <SkillBar skill="Spring Boot" level={70} />
-      <SkillBar skill="Core Java" level={90} />
-      <SkillBar skill="Advance Java" level={80} />
-      <SkillBar skill="Oracle Database" level={80} />
+      <SkillBar skill="Spring Boot" level={100} />
+      <SkillBar skill="Core Java" level={100} />
+      <SkillBar skill="Advance Java" level={100} />
+      <SkillBar skill="Oracle Database" level={100} />
       </div>
     </div>
   );

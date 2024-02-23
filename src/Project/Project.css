@@ -1,6 +1,6 @@
 .projects{
   display: flex;
-  padding:100px 50px ;
+  padding: 50px 50px;
   flex-direction: column;
   gap: 20px;
   min-height:100%;
@@ -184,7 +184,6 @@ color: var(--primarycolor);
 }
 @media (max-width: 600px) {
   .projects{
-    
     padding:60px 0px ;
     flex-direction: column;
     gap: 20px;
