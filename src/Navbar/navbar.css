@@ -1,8 +1,4 @@
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden; 
-}
+
 
 .dark {
   transition: .1s;
@@ -48,9 +44,9 @@ z-index: -1;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 30px;
   height: 10vh;
-  width: 100%;
+  width: 101%;
   position: fixed;
   background-color: var(--primarycolor);
   box-shadow: 2px 2px 3px rgba(128, 128, 128, 0.201);

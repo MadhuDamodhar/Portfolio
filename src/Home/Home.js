@@ -5,34 +5,35 @@ import linkedin from "../images/linkedin.png";
 import github from "../images/github.png";
 import twitter from "../images/twitter.png";
 import boy from "../images/hero.png";
-import { Link } from 'react-scroll';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
+import { Link } from "react-scroll";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import smoothscroll from "smoothscroll-polyfill";
+smoothscroll.polyfill();
 
 function Home() {
   useEffect(() => {
+    // Initialize AOS on component mount
     AOS.init({ duration: 2000 });
   }, []);
 
   return (
     <div className="Home-container">
-      <div data-aos="fade-right" data-aos-once="false"  className="left-intro">
+      <div data-aos="fade-right" className="left-intro">
         <span>Hi, I'm</span>
-        <span>Madhu Damodhar !
-        </span>
+        <span>Madhu Damodhar!</span>
         <span>
           Java full-stack developer, I have a basic command over both front-end
           and back-end technologies, allowing me to build complete and scalable
           applications.
         </span>
         <button>
+          {/* Adjusted the Link component */}
           <Link
-            activeClass="active"
-            smooth={true}
             to="contact"
             spy={true}
-            offset={20}
+            smooth={true}
+            offset={-70} // Adjust the offset based on your layout
             duration={500}
             className="navitem"
           >
@@ -41,22 +42,42 @@ function Home() {
         </button>
         <ul>
           <li>
-            <a title="Github" target="-blank" href="https://github.com/MadhuDamodhar">
+            <a
+              title="Github"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/MadhuDamodhar"
+            >
               <img src={github} alt="GitHub Logo" />
             </a>
           </li>
           <li>
-            <a target="-blank" title="LinkedIn" href="https://www.linkedin.com/in/madhu-damodhar-4122942a7/">
+            <a
+              title="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/madhu-damodhar-4122942a7/"
+            >
               <img src={linkedin} alt="LinkedIn Logo" />
             </a>
           </li>
           <li>
-            <a target="-blank" title="Twitter" href="https://twitter.com/Madhu_Damodhar">
+            <a
+              title="Twitter"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://twitter.com/Madhu_Damodhar"
+            >
               <img src={twitter} alt="Twitter Logo" />
             </a>
           </li>
           <li>
-            <a target="-blank" title="Instagram" href="https://www.instagram.com/damodhar_gari_abbai/">
+            <a
+              title="Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.instagram.com/damodhar_gari_abbai/"
+            >
               <img src={instagram} alt="Instagram Logo" />
             </a>
           </li>

@@ -35,11 +35,14 @@ function Project() {
   </div>
 
 
+  
+
+
 
 
   <div  data-aos="fade-right" className='project-card'>
   <div className='project-description'>
-  <h2>Basic Todo Application:</h2>
+  <h2>FullStack-Todo Application:</h2>
   <p>
     Users can add new tasks to the list.
     Edit task details, such as the task name or description.
@@ -49,6 +52,16 @@ function Project() {
  <img  src={todo}/>
  </div>
 
+
+ <div  data-aos="fade-left" className='project-card2'>
+ <div className='project-description2'>
+ <h2>PortFolio:</h2>
+ <p>
+  A website To Represent My skills to Recruiters. It is built with HTML5/CSS3 and JavaScript along with ReactJS library for building interactive user A website showcasing my work experience and projects
+  </p>
+</div>
+
+</div>
 
   </div>
   )
